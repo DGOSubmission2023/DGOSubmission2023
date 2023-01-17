@@ -6,4 +6,5 @@ Below each of the four files is explained briefly and sample usage is shown. Mor
 
 
 `transformResults.py` takes the results of the BERTopic model and gives each cluster a name. This is done via qualitativ analysis of each cluster. Thus if the code is rerun, this qualitativ analysis has to be done by the user. Within the python script one can then modify the dictionary `class_name_dict` to give each cluster a distinctive name. The file takes as input the results of the BERTopic model and outputs the modified dataframe used within the Streamlit app
+
 `python transformResults.py -i df.csv -o data/df_prep.csv `
