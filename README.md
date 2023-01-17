@@ -16,6 +16,6 @@ Below each of the four files is explained briefly and sample usage is shown. Mor
 
 `python transformResults.py -i myBERTopicModel/df_model.csv -o data/df_prep.csv`
 
-4. `appSwitzerland.py` contains the Streamlit application for displays the results of the BERTopic analysis. The app can be locally hosted using the command below. For the hosting we provided on the Streamlit Cloud we utilized another private Github repo.
+4. `appSwitzerland.py` contains the Streamlit application for displays the results of the BERTopic analysis. The app can be locally hosted using the command below. For the hosting we provided on the Streamlit Cloud we utilized another private Github repo. For the app to run the prior created `data/df_prep.csv` must be available.
 
 `streamlit run appSwitzerland.py`
