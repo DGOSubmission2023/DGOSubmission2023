@@ -1,6 +1,8 @@
 ### DGO Submission 2023 for Track 1: Data-driven Governance through Information Retrieval and Decision Support Systems
 
-The application R2D was mainly created through the four python scripts: `scrapeTelegramChannelMessages.py`, `runBERTopic.py`, `transformResults.py`, `appSwitzerland.py`
+The application R2D was mainly created through the four python scripts: `scrapeTelegramChannelMessages.py`, `runBERTopic.py`, `transformResults.py`, `appSwitzerland.py`. We provide an architecture diagram below to show the complete interaction of the given files:
+
+![architecture diagram](/architecture_diagram/architecture_diagram.png "architecture_diagram")
 
 Further we provide a `reqiurements.txt` file, which allows to install the necessary python packages and dependencies. We tested the installation on a Linux based GPU cluster and a 2021 M1 Macbook Pro. To install the requirements we recommend create a new virtual environment and run:
 
