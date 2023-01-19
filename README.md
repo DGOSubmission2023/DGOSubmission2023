@@ -2,6 +2,10 @@
 
 The application R2D was mainly created through the four python scripts: `scrapeTelegramChannelMessages.py`, `runBERTopic.py`, `transformResults.py`, `appSwitzerland.py`
 
+Further we provide a `reqiurements.txt` file, which allows to install the necessary python packages and dependencies. We test this on a Linux based GPU cluster and a 2021 M1 Macbook Pro. To install the requirements we recommend create a new virtual environment and run:
+
+`pip install -r requirements.txt`
+
 Below each of the four files is explained briefly and sample usage is shown. More information can be gathered from the comments within the code.
 
 1. `scrapeTelegramChannelMessages.py` takes the a list of open telegram channels as input, compare `data/switzerland_groups.txt` and scrapes the message text and the date the message was written on. It then save the results as a `.csv` file, the sample use is shown below:
