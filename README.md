@@ -2,7 +2,7 @@
 
 The application R2D was mainly created through the four python scripts: `scrapeTelegramChannelMessages.py`, `runBERTopic.py`, `transformResults.py`, `appSwitzerland.py`
 
-Further we provide a `reqiurements.txt` file, which allows to install the necessary python packages and dependencies. We test this on a Linux based GPU cluster and a 2021 M1 Macbook Pro. To install the requirements we recommend create a new virtual environment and run:
+Further we provide a `reqiurements.txt` file, which allows to install the necessary python packages and dependencies. We tested the installation on a Linux based GPU cluster and a 2021 M1 Macbook Pro. To install the requirements we recommend create a new virtual environment and run:
 
 `pip install -r requirements.txt`
 
