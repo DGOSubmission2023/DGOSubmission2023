@@ -12,7 +12,7 @@ Below each of the four files is explained briefly and sample usage is shown. Mor
 
 `python scrapeTelegramChannelMessages.py -i data/switzerland_groups.txt -o data/df_telegram.csv`
 
-2. `runBERTopic.py` runs the BERTopic algorithm on a given dataset e.g. `data/df_telegram.csv` obtained from the prior step. Further, we can specify where the outputs, meaning the model, some visualisation for analysis and output `.csv` files will be saved. Moreover, we can specify the number of clusters the algorithm should create. Last, we can specify if the trained model should do inference as well, meaning if it should predict the which topic a message belongs to for the input dataset. The results of the model are saved under `myBERTopicModel/df_model.csv` Below the example usage is show for the dataset `data/df_telegram.csv` we save our output to a folder, which the script creates named `myBERTopicModel`, we define the algorithm should create `25` cluster and also do infernece `--di`.
+2. `runBERTopic.py` runs the BERTopic algorithm on a given dataset e.g. `data/df_telegram.csv` obtained from the prior step. Further, we can specify where the outputs, meaning the model, some visualisation for analysis and output `.csv` files will be saved. Moreover, we can specify the number of clusters the algorithm should create. Last, we can specify if the trained model should do inference as well, meaning if it should predict to which topic a message belongs to for the input dataset. The results of the model are saved under `myBERTopicModel/df_model.csv` Below the example usage is shown for the dataset `data/df_telegram.csv` we save our output to a folder, which the script creates named `myBERTopicModel`, we define the algorithm should create `25` cluster and also do infernece `--di`.
 
 `python runBERTopic.py -i data/df_telegram.csv -o myBERTopicModel -k 25 --di`
 
@@ -20,6 +20,6 @@ Below each of the four files is explained briefly and sample usage is shown. Mor
 
 `python transformResults.py -i myBERTopicModel/df_model.csv -o data/df_prep.csv`
 
-4. `appSwitzerland.py` contains the Streamlit application for displays the results of the BERTopic analysis. The app can be locally hosted using the command below. For the hosting we provided on the Streamlit Cloud we utilized another private Github repo. For the app to run the prior created `data/df_prep.csv` must be available.
+4. `appSwitzerland.py` contains the Streamlit application for displaying the results of the BERTopic analysis. The app can be locally hosted using the command below. For the hosting provided by the Streamlit Cloud we utilized another private Github repo. For the app to run the prior created `data/df_prep.csv` must be available.
 
 `streamlit run appSwitzerland.py`
